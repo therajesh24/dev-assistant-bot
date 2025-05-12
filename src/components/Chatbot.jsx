@@ -24,8 +24,11 @@ const Chatbot = () => {
     dispatch(addMessage({ type: 'user', message: msg, time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), name: 'User' }));
     setLoading(true);
     try {
-      const response = await api.post('/chat', { prompt: msg });
-      dispatch(addMessage({ type: 'bot', message: response.data.reply }));
+      const response = await api.post('/api/query', {
+        query: msg,
+        filters: null
+      });
+      dispatch(addMessage({ type: 'bot', message: response.data.response }));
     } catch (error) {
       dispatch(addMessage({ type: 'bot', message: 'Sorry, there was an error. Please try again.' }));
     } finally {
@@ -67,7 +70,7 @@ const Chatbot = () => {
         })}
       </Box>
       {/* Chat input area: not scrollable */}
-      <Box sx={{ p: 2,  background: '#fff' }}>
+      <Box sx={{ p: 2, background: '#fff' }}>
         <ChatInput onSend={handleSend} disabled={loading} />
       </Box>
     </Box>

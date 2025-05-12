@@ -5,25 +5,20 @@ import StorageIcon from '@mui/icons-material/Storage';
 import CodeIcon from '@mui/icons-material/Code';
 import DescriptionIcon from '@mui/icons-material/Description';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import ConstructionIcon from '@mui/icons-material/Construction';
 import CheckIcon from '@mui/icons-material/Check';
 
 const docs = [
-  { icon: <MenuBookIcon sx={{ color: '#D72524', mr: 1 }} />, label: 'Project Overview', url: 'https://example.com/project-overview' },
-  { icon: <DescriptionIcon sx={{ color: '#D72524', mr: 1 }} />, label: 'API Documentation', url: 'https://example.com/api-docs' },
-  { icon: <CodeIcon sx={{ color: '#D72524', mr: 1 }} />, label: 'Coding Standards', url: 'https://example.com/coding-standards' },
-  { icon: <StorageIcon sx={{ color: '#D72524', mr: 1 }} />, label: 'Database Schema', url: 'https://example.com/database-schema' },
+  { icon: <MenuBookIcon sx={{ color: '#D72524', mr: 1 }} />, label: 'Welcome & Team Introduction', url: 'https://docs.google.com/document/d/1aIqaM-qeCxmso5Nh7akxe-zCUL6ysK5cYRiG40LsVrQ/edit?tab=t.0' },
+  { icon: <DescriptionIcon sx={{ color: '#D72524', mr: 1 }} />, label: 'Company Policies & Culture', url: 'https://docs.google.com/document/d/1xg5Ahgss30WiOWX0w9jWFmGtUP1mjseJWyEhKQxWwRA/edit?tab=t.0' },
+  { icon: <DescriptionIcon sx={{ color: '#D72524', mr: 1 }} />, label: 'First Week Checklist', url: 'https://docs.google.com/document/d/1hbUBeDQ3CR9KXUQKPjlUuW51RCy7XyoG1QI2GFqvLvw/edit?tab=t.0' },
+  { icon: <ConstructionIcon sx={{ color: '#D72524', mr: 1 }} />, label: 'Tools & Access Information', url: 'https://docs.google.com/document/d/1B5KRpgnTjM_oP2nYb5B3jHQH18WCjozBHyicsJub8lA/edit?tab=t.0' },
+  { icon: <CodeIcon sx={{ color: '#D72524', mr: 1 }} />, label: 'Technical Onboarding Guide', url: 'https://docs.google.com/document/d/1QWJXjzfHGUJFt9Xri-ogxQGuieQcRkOatXsmeiuDqqM/edit?tab=t.0' },
 ];
 
 const snippets = [
-  { title: 'Docker Compose Up', code: 'docker-compose up -d' },
-  { title: 'Run Database Migrations', code: 'npm run migrate' },
-  { title: 'Start Development Server', code: 'npm run dev' },
-  { title: 'Docker Compose Up', code: 'docker-compose up -d' },
-  { title: 'Run Database Migrations', code: 'npm run migrate' },
-  { title: 'Start Development Server', code: 'npm run dev' },
-  { title: 'Docker Compose Up', code: 'docker-compose up -d' },
-  { title: 'Run Database Migrations', code: 'npm run migrate' },
-  { title: 'Start Development Server', code: 'npm run dev' },
+  { title: 'Start Development Server', code: 'python main.py' },
+  { title: 'Start Client', code: 'npm run dev' },
 ];
 
 const ResourcesPanel = () => {

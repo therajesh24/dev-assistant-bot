@@ -28,7 +28,7 @@ const Header = () => {
             </Stack>
           </Box>
         </Stack>
-        <Stack direction="row" spacing={3} alignItems="center">
+        {/* <Stack direction="row" spacing={3} alignItems="center">
           <IconButton size="large" sx={{ color: '#5B5B7B' }}>
             <AccessibilityNewIcon fontSize="medium" />
           </IconButton>
@@ -38,7 +38,7 @@ const Header = () => {
           <IconButton size="large" sx={{ color: '#5B5B7B' }}>
             <SettingsIcon fontSize="medium" />
           </IconButton>
-        </Stack>
+        </Stack> */}
       </Toolbar>
     </Box>
   );
